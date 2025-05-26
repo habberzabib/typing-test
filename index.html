@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Typing Speed Test</title>
+    <script src="js/quotes.js"></script>
+    <script defer src="js/main.js"></script>
+    <style>
+      body {
+        font-size: larger;
+        max-width: 1500px;
+        padding: 30px;
+      }
+      textarea {
+        width: 100%;
+        height: 150px;
+        font-size: 15px;
+        padding: 10px;
+        border: 1px solid;
+      }
+
+      button {
+        font-size: 20 px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      #result {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Typing Speed Test</h1>
+
+    <div id="quote">
+      Click "Start Test" to begin. Press Enter when you finish typing to check
+      for WPM and accuracy. You may repeat with the collection of randomized
+      phrases as many times as you'd like.
+    </div>
+
+    <br />
+
+    <textarea id="input"></textarea>
+
+    <br />
+
+    <button id="startBtn">Start Test</button>
+
+    <div id="result"></div>
+  </body>
+</html>
